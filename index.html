@@ -1,9 +1,185 @@
 <!DOCTYPE html>
-<html>
+<html lang=en>
 	<head>
-		<h1>Welcome to Christopher "Noctis" McDonald's Portfolio!</h1>
+		<!--Meta Tags-->
+		<meta charset="utf-8">
+		<meta name="description" content="Christopher McDonald's Portfolio">
+		<meta name="keywords" content="Christopher,McDonald,Noctis,Portfolio,Programming,Developer,Software,C,Java,HTML,CSS,XML,JavaScript">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta name="author" content="Christopher McDonald">
+		
+		<!--CSS-->
+		<link rel="stylesheet" href="./styles/css/bootstrap/bootstrap.css">
+		<link rel="stylesheet" href="./styles/css/custom/body.css">
 	</head>
 	
-	<body>
-	</body>
+	<body data-spy="scroll" data-target=".navbar">		
+		<!--Navigation Bar-->
+		<nav id="nav" class="navbar navbar-toggleable-md bg-faded navbar-inverse bg-primary fixed-top">
+			<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<a class="navbar-brand" href="#welcome">Portfolio</a>
+				
+			<div class="collapse navbar-collapse justify-content-end" id="navbar">
+				<ul class="navbar-nav">
+				<!--Specific li to line up items in mobile view-->
+					<li class="nav-item">
+						<a class="nav-link" href="#about"></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#about">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#skills">Skills</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#education">Education</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#contact">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+
+		<div data-spy="scroll" data-target="navbar" data-offset="50">
+			<header class="container">
+				<div class="jumbotron d-block" id="welcome">
+					<div class="w-50 mx-auto text-center" id="pic">
+						<h2><br />Welcome to my Portfolio!</h2>
+						<img src="./img/profile.jpg" class="img-thumbnail rounded mx-auto d-block rounded-circle" alt="Profile Image">
+					</div>
+				</div>
+
+			</header>
+
+			<article class="container" id="about">
+				<div class="jumbotron text-center">
+					<h1>About Me</h1>
+
+					<div class="card card-inverse card-primary text-xs-center">
+						<div class="card-block">
+						<blockquote class="card-blockquote">
+						<p class="text-left">Hi, I’m Christopher McDonald, but I go by Noctis. This is my web portfolio. 
+							I have a Bachelor's of Science in Computer Science Southern Oregon University. 
+							I graduated Cum Laude with a 3.55 GPA in June 2017. 
+							I was born in California and raised in Southern Oregon after the age of 10, when my family moved out to Central Point, a small town in Oregon. 
+							I started college when I was 16 in Electronics at Rogue Community College while concurrently being in high school. 
+							<br /><br />I like video games and developing software, and I'm generally a pretty big nerd. 
+							In my free time, besides gamin>g, I enjoy learning new technologies and languages that interest me. 
+							Currently I am practicing Angular, C# and other net-based technologies. I also really like the idea of game development due to my background in gaming.
+							I enjoy development in these two areas the most as they allow my creativeness to flow.
+							<br /><br />Thanks for visiting my portfolio. If you have any questions or would like to work with me, feel free to use the contact form below or send me an email at Christopher.Joseph.McDonald@Gmail.com.
+						</blockquote>
+						</div>
+					</div>
+
+				</div>
+			</article>
+
+			<article class="container" id="skills">
+				<div class="jumbotron text-center">
+					<h1>Skills</h1>
+					<h4><span class="badge badge-default">HTML5</span>
+						<span class="badge badge-default">CSS3</span>
+						<span class="badge badge-default">Javascript</span>
+						<span class="badge badge-default">JQuery</span>
+						<span class="badge badge-default">Bootstrap</span>
+						<span class="badge badge-default">Angular</span>
+						</h4>
+
+					<h4><span class="badge badge-default">Java</span>
+						<span class="badge badge-default">C</span>
+						<span class="badge badge-default">C#</span>
+						<span class="badge badge-default">Python</span>
+						<span class="badge badge-default">mySQL</span>
+						<span class="badge badge-default">Android</span>
+						</h4>
+					<h4><span class="badge badge-default">Github</span>
+						<span class="badge badge-default">Agile</span>
+						<span class="badge badge-default">Waterfall</span>
+						<span class="badge badge-default">Test Driven Dev</span>
+						<span class="badge badge-default">MVC</span>
+					
+				</div>
+			</article>
+
+			<article class="container" id="education">
+				<div class="jumbotron text-center">
+					<h1>Education</h1>
+
+					<div class="card-deck">
+						<div class="card">
+							<div class="card-block">
+							<h3 class="card-title">Southern Oregon University</h3>
+								<p class="card-text">Ashland, Oregon<br />
+													B.S. Computer Science<br />
+													<br />
+													Relevant Coursework:<br />
+													Algorythms and Data Structures, Artificial Intelligence,
+													C and Unix, Computer Forensics, Computer Organization,
+													Databases, Foundations in Emerging Computer Applications,
+													Operating Systems, Parallel Programming, Programming Languages
+								</p>
+							</div>
+						</div>
+
+						<div class="card">
+							<div class="card-block">
+								<h3 class="card-title">Rogue Community College</h3>
+								<p class="card-text">Medford, Oregon<br />
+													 A.A.S Computer Support Technician<br />
+													 <br />
+													 Relevant Coursework:<br />
+													 Visual Basic I, Advanced Operating Systems, 
+													 Networking Operating Systems
+													 <br />
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</article>
+
+			<article class="container" id="contact">
+				<div class="jumbotron">
+					<form class="text-center" action="https://formspree.io/christopher.joseph.mcdonald@gmail.com" method="POST">
+						<legend>Contact</legend>
+						<fieldset>	
+							<div class="form-group">
+								<label for="_replyto">Email Address</label>
+								<input type="email" class="form-control" id="_replyto" aria-describedby="emailHelp" placeholder="Enter email">
+								<small id="emailHelp" class="form-text text-muted">This e-mail will be sent via FormSpree.io</small>
+							</div>
+
+							<div class="form-group">
+								<label for="description">Message:</label>
+								<textarea class="form-control" id="description" rows="3"></textarea>
+							</div>
+
+							<input type="text" name="_gotcha" style="display:none" />
+
+							<button type="submit" class="btn btn-primary">Submit</button>
+						</fieldset>
+					</form>
+				</div>
+			</article>
+		</div>
+
+		<footer>
+			<div class="progress">
+				<div class="progress-bar progress-bar-danger progress-bar-striped progress-bar-animated" id="progressbar" role="progressbar" 
+				aria-valuenow="0" aria-valuemin="0" aria-valuemax="100" style="width: 0%"></div>
+			</div>
+		</footer>
+
+		<!--Script files-->
+		<script src="./scripts/js/jquery/jquery-3.2.1.js"></script>
+		<script src="./scripts/js/custom/animations.js"></script>
+		<script src="./scripts/js/tether/tether.js"></script>
+		<script src="./scripts/js/bootstrap/bootstrap.min.js"></script>
+		
+		
+		</body>
 </html>
