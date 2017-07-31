@@ -19,3 +19,8 @@ header {
     bottom: 0;
     width: 100%;
 }
+
+/*Hidden articles*/
+#experience, #projects, #testimonials{
+    display: none;
+}
